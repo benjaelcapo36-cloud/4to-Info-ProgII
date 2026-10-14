@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     int N;
     int matriz[n][2];
-    int vector[n];
+    int vector_result[n];
     do{
         cin >> N;
     }while (n<3);
@@ -14,27 +14,27 @@ int main(){
     }
     for (int i=0; i<n; i++){
         for (int j=0; j<2; j++){
-          vector[i] = mat[i][0]+mat[i][1]; // la suma de los numeros dentro de la matriz
+          vector_result[i] = mat[i][0]+mat[i][1]; // la suma de los numeros dentro de la matriz
         }
     }
     for (int i=0; i<n; i++){
-            cout << vector[i] << " "; 
+            cout << vector_result[i] << " "; 
     }
 
     if (n=2){
-        if (vector[0]>0 && vector[1]>0){
+        if (vector_result[0]>0 && vector_result[1]>0){
                 cout << "pertenece al cuadrante 1" << endl; 
         }else{
-            if (vector[0]<0 && vector[1]>0){
+            if (vector_result[0]<0 && vector_result[1]>0){
                 cout << "pertenece al cuadrante 2" << endl;
         }else{
-            if (vector[0]<0 && vector[1]<0){
+            if (vector_result[0]<0 && vector_result[1]<0){
                 cout << "pertenece al cuadrante 3" << endl;
         }else{
-            if (vector[0]>0 && vector[1]<0){
+            if (vector_result[0]>0 && vector_result[1]<0){
                 cout << "pertenece al cuadrante 4" << endl;
         }else{ 
-            if (vector[0]==0 && vector[1]==0){
+            if (vector_result[0]==0 && vector_result[1]==0){
                 cout << "el vector es nulo" << endl;
             }
         }
