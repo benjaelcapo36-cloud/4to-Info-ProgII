@@ -6,15 +6,15 @@ int main(){
     int vector[n];
     do{
         cin >> n;
-    }while (n<2);
+    }while (n<3);
     for (int i=0; i<n; i++){           
-        for (int j=0; j<2; j++){
+        for (int j=0; j<3; j++){
             cin >> mat[i][j];
         }
     }
     for (int i=0; i<n; i++){
-        for (int j=0; j<2; j++){
-          vector[i] = mat[i][j]+mat[i][j]; // la suma de los numeros dentro de la matriz
+        for (int j=0; j<3; j++){
+          vector[i] = mat[i][0]+mat[i][1]; // la suma de los numeros dentro de la matriz
         }
     }
     for (int i=0; i<n; i++){
