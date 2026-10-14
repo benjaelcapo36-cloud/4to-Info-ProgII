@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int N;
-    int matriz[n][2];
+    int N; 
+    int mat[n][2];
     int vector_result[n];
     do{
-        cin >> N;
+        cin >> mat[n][2];
     }while (n<3);
     for (int i=0; i<n; i++){           
         for (int j=0; j<2; j++){
