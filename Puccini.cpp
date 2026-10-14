@@ -14,11 +14,11 @@ int main(){
     }
     for (int i=0; i<n; i++){
         for (int j=0; j<2; j++){
-          vector[i] = mat[i][j]+mat[i][j];
+          vector[i] = mat[i][j]+mat[i][j]; // la suma de los numeros dentro de la matriz
         }
     }
     for (int i=0; i<n; i++){
-            cout << vector[i] << " ";
+            cout << vector[i] << " "; 
     }
 
     if (n=2){
