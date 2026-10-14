@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int n;
-    int mat[n][2];
+    int N;
+    int matriz[n][2];
     int vector[n];
     do{
-        cin >> n;
+        cin >> N;
     }while (n<3);
     for (int i=0; i<n; i++){           
-        for (int j=0; j<3; j++){
+        for (int j=0; j<2; j++){
             cin >> mat[i][j];
         }
     }
     for (int i=0; i<n; i++){
-        for (int j=0; j<3; j++){
+        for (int j=0; j<2; j++){
           vector[i] = mat[i][0]+mat[i][1]; // la suma de los numeros dentro de la matriz
         }
     }
